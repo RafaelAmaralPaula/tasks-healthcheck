@@ -11,11 +11,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class HealthCheck {
-
+public class ExampleTest {
 
     @Test
-    public void healthCheckt() throws MalformedURLException {
+    public void test() throws MalformedURLException {
         WebDriver driver = new RemoteWebDriver(new URL("http://192.168.100.112:4444/wd/hub") , new ChromeOptions());
         try {
             driver.navigate().to("http://192.168.100.112:9999/tasks");
